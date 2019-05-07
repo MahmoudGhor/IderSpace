@@ -24,7 +24,7 @@ const config = {
     maxConcurrentCrawlers: configFile.maxConcurrentCrawlers,
     hasToLog: configFile.hasToLog,
     rootProfiles: configFile.rootProfiles,
-    isHeadless: true,
+    isHeadless: false,
     idUser: ""
 };
 
