@@ -16,7 +16,7 @@ module.exports = async ({ email, password, isHeadless, hasToLog, proxyAddress } 
 
   logger.info('scrapedin', 'required parameters email and password was provided')
 
-  const args = {args: ['--no-sandbox', '--disable-setuid-sandbox']}
+  const args =  ['--no-sandbox', '--disable-setuid-sandbox']
   args && logger.info('scrapedin', `using proxy address: ${proxyAddress}`)
   const browser = await puppeteer.launch({ headless: isHeadless, args })
 
