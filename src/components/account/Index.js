@@ -71,6 +71,7 @@ class Index extends Component {
     }
 
     messageReceive(msg) {
+        console.log(msg);
         this.addNotification();
         this.setState({valReqNotif: this.state.valReqNotif+1})
     }
